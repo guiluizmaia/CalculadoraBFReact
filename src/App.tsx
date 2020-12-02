@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="bf">
       <div className="inputs">
-        <h1>Calculadora BF (Body Fat)</h1>
+        <h1 className="nome">Calculadora BF (Body Fat)</h1>
         <h1>Peso:</h1>
         <input placeholder={`Em KG`}/>
         <h1>Altura:</h1>
@@ -20,7 +20,12 @@ function App() {
         <input placeholder={`Em Centímetros`}/>
         <h1>Quadril (Para ulheres):</h1>
         <input placeholder={`Em Centímetros`}/>
-        <button >Calcular</button>
+        <button>
+          Calcular Para Mulheres
+        </button>
+        <button>
+          Calcular Para Homens
+        </button>
       </div>
     </div>
   );
