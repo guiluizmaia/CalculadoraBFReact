@@ -13,39 +13,40 @@ function App() {
 
 
   const handleChangePeso = (e) =>{  
-    peso = e.target.value;
+    //peso = e.target.value;
   
-    setPeso(peso);
+    setPeso(e.target.value);
+    
 }
 
 const handleChangeAlt = (e) =>{  
-  alt = e.target.value;
+  //alt = e.target.value;
 
-  setAlt(alt);
+  setAlt(e.target.value);
 }
 
 const handleChangeIda = (e) =>{  
-  ida = e.target.value;
+  //ida = e.target.value;
 
-  setIda(ida);
+  setIda(e.target.value);
 }
 
 const handleChangePesc = (e) =>{  
-  pesc = e.target.value;
+  //pesc = e.target.value;
 
-  setPesc(pesc);
+  setPesc(e.target.value);
 }
 
 const handleChangeCint = (e) =>{  
-  cint = e.target.value;
+ // cint = e.target.value;
 
-  setCint(cint);
+  setCint(e.target.value);
 }
 
 const handleChangeQuad = (e) =>{  
-  quad = e.target.value;
+  //quad = e.target.value;
 
-  setQuad(quad);
+  setQuad(e.target.value);
 }
 
   return (
@@ -53,17 +54,17 @@ const handleChangeQuad = (e) =>{
       <div className="inputs">
         <h1 className="nome">Calculadora BF (Body Fat)</h1>
         <h1>Peso:</h1>
-        <input value={peso} placeholder={`Em KG`}/>
+        <input value={peso} placeholder={`Em KG`} onChange={(e) => handleChangePeso(e)}/>
         <h1>Altura:</h1>
-        <input value={alt} placeholder={`Em Centímetros`}/>
+        <input value={alt} placeholder={`Em Centímetros`} onChange={(e) => handleChangeAlt(e)}/>
         <h1>Idade:</h1>
-        <input value={ida} placeholder={`Em Anos`}/>
+        <input value={ida} placeholder={`Em Anos`} onChange={(e) => handleChangeIda(e)}/>
         <h1>Pescoço:</h1>
-        <input value={pesc} placeholder={`Em Centímetros`}/>
+        <input value={pesc} placeholder={`Em Centímetros`} onChange={(e) => handleChangePesc(e)}/>
         <h1>Cintura:</h1>
-        <input value={cint} placeholder={`Em Centímetros`}/>
+        <input value={cint} placeholder={`Em Centímetros`} onChange={(e) => handleChangeCint(e)}/>
         <h1>Quadril (Para ulheres):</h1>
-        <input value={quad} placeholder={`Em Centímetros`}/>
+        <input value={quad} placeholder={`Em Centímetros`} onChange={(e) => handleChangeQuad(e)}/>
         <button>
           Calcular Para Mulheres
         </button>
