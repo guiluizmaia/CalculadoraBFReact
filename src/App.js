@@ -49,6 +49,18 @@ const handleChangeQuad = (e) =>{
   setQuad(e.target.value);
 }
 
+/*
+Para Homens:
+
+% de gordura = 495/(1.0324-.19077(log(cintura-pescoço))+.15456(log(altura)))-450 (logaritmos em base 10)
+Para Mulheres:
+
+% de gordura = 495/(1.29579-.35004(log(cintura+quadril-pescoço))+.22100(log(altura)))-450 (logaritmos em base 10)
+*/
+const calcula = () =>{
+  
+}
+
   return (
     <div className="bf">
       <div className="inputs">
@@ -63,7 +75,7 @@ const handleChangeQuad = (e) =>{
         <input value={pesc} placeholder={`Em Centímetros`} onChange={(e) => handleChangePesc(e)}/>
         <h1>Cintura:</h1>
         <input value={cint} placeholder={`Em Centímetros`} onChange={(e) => handleChangeCint(e)}/>
-        <h1>Quadril (Para ulheres):</h1>
+        <h1>Quadril (Para mulheres):</h1>
         <input value={quad} placeholder={`Em Centímetros`} onChange={(e) => handleChangeQuad(e)}/>
         <button>
           Calcular Para Mulheres
