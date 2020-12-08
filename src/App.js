@@ -58,7 +58,12 @@ Para Mulheres:
 % de gordura = 495/(1.29579-.35004(log(cintura+quadril-pescoço))+.22100(log(altura)))-450 (logaritmos em base 10)
 */
 const calcula = () =>{
+  if(quad == null){
   const resul = 495/(1.0324-0.19077(Math.log10(cint-pesc))+0.15456(Math.log10(alt)))-450
+  }else{
+
+  }
+  
 }
 
   return (
