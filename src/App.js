@@ -61,6 +61,7 @@ const calcula = () =>{
   if(quad == null){
   const resul = 495/(1.0324-0.19077(Math.log10(cint-pesc))+0.15456(Math.log10(alt)))-450
   }else{
+    const resul = 495/(1.0324-0.19077(Math.log10(cint+quad-pesc))+0.15456(Math.log10(alt)))-450
 
   }
   
